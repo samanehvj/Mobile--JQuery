@@ -6,7 +6,18 @@
    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
    <style>
+
+h1,h2{
+   background-color: teal;
+   color: white;
+   font-family: "Kaushan Script";
+}
+     
       .footer {
          position: fixed;
          width: 100vw;
@@ -19,7 +30,9 @@
          flex-direction: row;
          justify-content: space-around;
          padding: 0;
-         margin: 0
+         margin: 0;
+         font-size: 20px;
+         font-family: "roboto";
       }
 
       .footer a {
@@ -31,13 +44,24 @@
       }
 
       .footer a.btn {
-         color: black;
+         color: wheat;
          text-transform: uppercase;
+         background-color:teal;
+
       }
 
       .footer a.active {
          background-color: black;
          color: white;
+      }
+
+      #home, #about,#contact {
+         background-color:wheat;
+         color: black;
+         font-size: 30px;
+         font-family: "Caveat";
+         font-weight: bold;
+
       }
    </style>
 </head>
@@ -64,7 +88,7 @@
 
    <div data-role="page" id="about">
       <div data-role="header">
-         <h1>About Header Text</h1>
+         <h1>About Header </h1>
       </div>
 
       <div data-role="main" class="ui-content">
@@ -85,13 +109,15 @@
 
    <div data-role="page" id="contact">
       <div data-role="header">
-         <h1>Contact Header Text</h1>
+         <h1>Contact Header </h1>
       </div>
 
       <div role="main" class="ui-content">
          <p>Contact: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             Lorem Ipsum has been the industry's standard dummy text ever since the
             1500s.</p>
+            
+ 
 
    
       </div>
