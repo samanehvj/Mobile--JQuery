@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta name="viewport" content="width = device-width, initial-scale = 1">
+   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+   <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+   <style>
+      .footer {
+         position: fixed;
+         width: 100vw;
+         bottom: 0;
+         padding: 0;
+      }
+
+      .footer p {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         padding: 0;
+         margin: 0
+      }
+
+      .footer a {
+         text-decoration: none;
+         border: 1px solid black;
+         flex-grow: 1;
+         padding: 10px 15px;
+         text-align: center;
+      }
+
+      .footer a.btn {
+         color: black;
+         text-transform: uppercase;
+      }
+
+      .footer a.active {
+         background-color: black;
+         color: white;
+      }
+   </style>
+</head>
+
+<body>
+   <div data-role="page" id="home">
+      <div data-role="header">
+         <h2>Home Header</h2>
+      </div>
+
+      <div data-role="main" class="ui-content">
+         <p>Home: Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+      </div>
+
+      <div class="footer" data-role="footer">
+         <p>
+            <a class="btn active" href="#home">Home</a>
+            <a class="btn" href="#about">About</a>
+            <a class="btn"href="#contact">Contact</a>
+         </p>
+      </div>
+   </div>
+
+   <div data-role="page" id="about">
+      <div data-role="header">
+         <h1>About Header Text</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+         <p>About: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the
+            1500s.</p>
+      </div>
+
+      <div class="footer" data-role="footer">
+         <p>
+            <a class="btn" href="#home">Home</a>
+            <a class="btn active" href="#about">About</a>
+            <a class="btn" href="#contact">Contact</a>
+         </p>
+      </div>
+   </div>
+
+
+   <div data-role="page" id="contact">
+      <div data-role="header">
+         <h1>Contact Header Text</h1>
+      </div>
+
+      <div role="main" class="ui-content">
+         <p>Contact: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the
+            1500s.</p>
+
+   
+      </div>
+
+      <div class="footer" data-role="footer">
+         <p>
+            <a class="btn" href="#home">Home</a>
+            <a class="btn" href="#about">About</a>
+            <a class="btn active" href="#contact">Contact</a>
+         </p>
+      </div>
+   </div>
+</body>
+
+</html>
